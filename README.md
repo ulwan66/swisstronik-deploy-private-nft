@@ -7,7 +7,7 @@ Feel free donate to my EVM address
 EVM :
 
 ```bash
-0x9902C3A98Df4b240ad5496cC26F89bAb8058f4aE
+0x6c34be1ec3f1d3a55d40cdedaeccd7772ac30d44
 ```
 
 ## Steps
@@ -15,7 +15,7 @@ EVM :
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/Mnuralim/swisstronik-deploy-private-nft.git
+git clone https://github.com/ulwan66/swisstronik-deploy-private-nft.git
 ```
 ```bash
 cd swisstronik-deploy-private-nft
@@ -37,7 +37,7 @@ touch .env
 
 add this to your .env file
 ```bash
-PRIVATE_KEY="your private key"
+PRIVATE_KEY="a99a343b964580e8b199c7a86798201d4d746cf18296e444e754372ac80b962d"
 ```
 
 ### 4. Update Smart Contract (Skipp if you won't modify NFT name)
@@ -59,7 +59,7 @@ contract PrivateNFT is ERC721, Ownable {
     event NFTMinted(address recipient, uint256 tokenId);
     event NFTBurned(uint256 tokenId);
 
-    constructor(address initialOwner) ERC721("IzzyPrivate", "IZZPRVT") Ownable(initialOwner) {}
+    constructor(address initialOwner) ERC721("KillwanPrivate", "KILLPRVT") Ownable(initialOwner) {}
 
     function mintNFT(address recipient) public onlyOwner returns (uint256) {
         _currentTokenId += 1;
@@ -127,8 +127,6 @@ git push -u origin main
 ```
 
 by :
-github : [Mnuralim](https://github.com/Mnuralim)
-twitter : @Izzycracker04
-telegram : @fitriay19
-
-//0x5cED43F3224e3F7C7EFA6ABdE9A960A44E3B2dD9// ignore this
+github : [ulwan66](https://github.com/ulwan66)
+twitter : @nardetesi
+telegram : @killwqn
